@@ -1,6 +1,6 @@
 = vulnerable-go
 
-Vulnerable web app written in Go using the Gin Web Framework.
+Vulnerable web app written in Go using the Gin web framework.
 
 == Login Credentials
 
@@ -8,6 +8,12 @@ For form based login.
 
 Username: admin
 Password: admin
+
+== Run
+
+----
+go run app.go
+----
 
 == Vulnerabilities
 
