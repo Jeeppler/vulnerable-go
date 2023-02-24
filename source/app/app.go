@@ -44,7 +44,7 @@ func loginPage(context *gin.Context) {
     logout := context.Query("logout")
 
     if logout != "" {
-        message = "<div style='border: solid 0.2em green; padding: 0.5em; margin: 0.5em 0;'> logout " + logout + "!</div>"
+        message = "<div style='border: solid 0.2em green; padding: 0.5em; margin: 0.5em 0;'> logout " + logout + "!</div>" // CWE-79: reflected via GET
     }
 
     context.HTML(http.StatusOK, "login.tmpl", gin.H{"message": message})

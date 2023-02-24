@@ -1,17 +1,31 @@
 = vulnerable-go
 
+Vulnerable web app written in Go using the Gin Web Framework.
+
+== Login Credentials
+
+For form based login.
+
 Username: admin
 Password: admin
 
-Vulnerabilities:
+== Vulnerabilities
 
 * CWE-523
+* CWE-79: reflected via GET
 * CWE-565
 * CWE-257
 * CWE-208
 * CWE-79: reflected via POST
 * CWE-327
 
+.Get list of vulnerabilities
 ----
 grep -o -R 'CWE-.*[0-9]*' .
 ----
+
+.Get list of vulnerabilities with line number
+----
+grep -o -n -R 'CWE-.*[0-9]*' .
+----
+
