@@ -1,0 +1,17 @@
+= vulnerable-go
+
+Username: admin
+Password: admin
+
+Vulnerabilities:
+
+* CWE-523
+* CWE-565
+* CWE-257
+* CWE-208
+* CWE-79: reflected via POST
+* CWE-327
+
+----
+grep -o -R 'CWE-.*[0-9]*' .
+----
