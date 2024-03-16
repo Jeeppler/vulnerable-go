@@ -29,7 +29,7 @@ func main() {
     router.GET("/logout", logoutHandler)
     router.HEAD("/status")
 
-    router.Run("localhost:8080") // CWE-523
+    router.Run(":8080") // CWE-523
 }
 
 func startPage(context *gin.Context) {

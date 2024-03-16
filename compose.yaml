@@ -1,0 +1,12 @@
+services:
+  vulnerable-go:
+    build:
+      context: .
+    container_name: vulnerable-go
+    networks:
+      - "sechub"
+
+networks:
+  sechub:
+    external: true
+    name: "sechub"
