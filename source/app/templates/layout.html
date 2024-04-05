@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>{{ .title }}</title>
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel='stylesheet' href='/assets/main.css' />
+</head>
+
+<body class="container-flex flex-column">
+    <nav class="bg-black text-white container-flex flex-row">
+        <section>
+            <a href="/"><img id="logo" src="assets/logo.png" alt="VG Logo" title="VG Logo" class="logo" /></a>
+        </section>
+        <section class="flex-grow container-flex flex-column">
+            <h1 id="page-title">{{ .title }}</h1>
+        </section>
+        <section>
+            {{block "navigation" .}}{{end}}
+        </section>
+    </nav>
+    <main>
+        {{block "content" .}}{{end}}
+    </main>
+    <footer class="bg-black text-white">
+        Vulnerable-Go is a vulnerable application.
+    </footer>
+</body>
+
+</html>

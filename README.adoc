@@ -36,3 +36,14 @@ grep -o -R 'CWE-.*[0-9]*' .
 grep -o -n -R 'CWE-.*[0-9]*' .
 ----
 
+=== Exploit
+
+==== XSS Login (reflected)
+
+. Go to: http://localhost:8080/login?logout=%3Cscript%3Ealert(%22hello%22)%3C/script%3E`
+
+==== XSS Dashboard (reflected)
+
+. Open the developer tools (Firefox - inspector)
+. Change value of cookie `user` to: `<h1>Hello</h1>`
+

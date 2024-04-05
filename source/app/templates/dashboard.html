@@ -1,0 +1,52 @@
+{{define "content"}}
+<h1>KPI Dashboard</h1>
+<h4>Hello, {{.user | unescapeHTML}} welcome back.</h4>
+<div class="container-grid dashboard">
+    <section>
+        <div class="icon">👩🧑‍🦳👨🏿</div>
+        <hgroup>
+            <h3>23 493</h3>
+            <p>Customers</p>
+        </hgroup>
+    </section>
+    <section>
+        <div class="icon">🛍️</div>
+        <hgroup>
+            <h3>345</h3>
+            <p>K Sales</p>
+        </hgroup>
+    </section>
+    <section>
+        <div class="icon">💰</div>
+        <hgroup>
+            <h3>9,24</h3>
+            <p>M β-Coins</p>
+        </hgroup>
+    </section>
+    <section>
+        <div class="icon">🏭</div>
+        <hgroup>
+            <h3>1,5</h3>
+            <p>M Tonnes CO2</p>
+        </hgroup>
+    </section>
+    <section>
+        <div class="icon">🧑</div>
+        <hgroup>
+            <h3>34</h3>
+            <p>Employees</p>
+        </hgroup>
+    </section>
+    <section>
+        <div class="icon">🏘️</div>
+        <hgroup>
+            <h3>7</h3>
+            <p>Office Locations</p>
+        </hgroup>
+    </section>
+</div>
+{{end}}
+
+{{define "navigation"}}
+<a class="button" href="/logout">logout</a>
+{{end}}
